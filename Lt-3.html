@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML tables and semantic elements practice">
+    <title>Tables and Semantic HTML5 Elements</title>
+</head>
+
+<body>
+   <!-- Header section -->
+    <header>
+        <h1>Student Information Page</h1>
+    </header>
+
+    <hr>
+
+     <!-- Navigation section -->
+      <nav>
+            <a href="#students">Students</a> |
+            <a href="#departments">Departments</a> |
+            <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main content -->
+     <main>
+
+         <!-- Section: Welcome -->
+
+        <section id="welcome">
+            <h2>Welcome Section</h2>
+            <p>
+                This page shows how semantic HTML5 elements and tables are used to organize student information clearly.
+            </p>
+        </section>
+
+        <!-- Section: Student Table -->
+        <section id="students">
+            <h2>Student Information Table</h2>
+
+            <table border="1">
+                <caption><strong>Student Academic Information</strong></caption>
+                
+                <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">CGPA</th>
+                </tr>
+
+                <tr>
+                    <td>23-52626-2</td>
+                    <td>SK. Farhan Alvi</td>
+                    <td>Computer Science And Engineering</td>
+                    <td>3.84</td>
+                </tr>
+
+                <tr>
+                    <td>23-53029-3</td>
+                    <td>Asma Akther</td>
+                    <td>Civil Engineering</td>
+                    <td>3.90</td>
+                </tr>
+
+                <tr>
+                    <td>23-88671-1</td>
+                    <td>MD.Sumon Ahmed</td>
+                    <td>Electrical Engineering</td>
+                    <td>3.88</td>
+                </tr>
+
+                <tr>
+                    <td>23-58621-3</td>
+                    <td>Robin Ahmed</td>
+                    <td>Mechanical Engineering</td>
+                    <td>3.91</td>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+
+         <hr>
+
+    <!-- Footer section -->
+
+    <footer id="contact">
+        <p>&copy; 2026  University Student Information Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
