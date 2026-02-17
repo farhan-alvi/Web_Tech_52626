@@ -14,57 +14,65 @@
 
 <body>
 
-    <h1 id="top">Lists, Links, Images, and Attributes</h1>
-    <hr>
+    <!-- Programming Languages Section -->
+    <section class="programming-section">
+        <h1 id="top">Lists, Links, Images, and Attributes</h1>
+        <hr>
 
-    <h2>Programming Languages</h2>
+        <h2>Programming Languages</h2>
 
-    <div class="list-container">
-        <p>This paragraph is inside a div (for descendant selector).</p>
+        <div class="list-container">
+            <p>This paragraph is inside a div (for descendant selector).</p>
 
-        <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <!-- Links Section -->
-    <h2>Links Section</h2>
-
-    <p>
-        Visit my university website:
-        <a href="https://www.aiub.edu" target="_blank">AIUB</a>
-    </p>
-
-    <p>
-        <a href="#top">Go to top of the page</a>
-    </p>
-
-    <hr>
-
-    <!-- Image Section -->
-    <h2>Image Section</h2>
-
-    <section class="image-section">
-        <img src="AIUB_Image.jpg" alt="AIUB Image">
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
     </section>
 
     <hr>
 
-    <!-- Form Section -->
-    <h2>Contact Form</h2>
+    <!-- Links Section -->
+    <section class="links-section">
+        <h2>Links Section</h2>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name"><br><br>
+        <p>
+            Visit my university website:
+            <a href="https://www.aiub.edu" target="_blank">AIUB</a>
+        </p>
 
-        <button type="submit">Submit</button>
-    </form>
+        <p>
+            <a href="#top">Go to top of the page</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <h2>Image Section</h2>
+
+        <img src="AIUB_Image.jpg" alt="AIUB Image">
+
+    </section>
+
+    <hr>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h2>Contact Form</h2>
+
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
 </body>
 </html>
