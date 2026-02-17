@@ -1,0 +1,82 @@
+/* ---------------------------
+   Part A: CSS Units
+---------------------------- */
+
+/* Group Selector */
+h1, h2 {
+    color: darkblue;
+    font-size: 2rem;           /* rem */
+    text-align: center;
+}
+
+/* Absolute unit (px) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;              /* px */
+    background-color: #f4f4f4;
+}
+
+/* Descendant Selector */
+div p {
+    font-size: 1.2em;          /* em */
+    color: green;
+}
+
+/* Using percentage for width */
+.list-container {
+    width: 80%;                /* % */
+    margin: 2em auto;          /* em */
+    padding: 1rem;             /* rem */
+    background-color: #e6f2ff;
+}
+
+/* Using vh for height */
+.image-section {
+    height: 30vh;              /* vh */
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Using cm (absolute unit) */
+img {
+    width: 6cm;                /* cm */
+}
+
+/* ---------------------------
+   Part B: Selector Types
+---------------------------- */
+
+/* Attribute Selector */
+input[type="text"] {
+    width: 50%;                /* % */
+    padding: 10px;             /* px */
+    border: 2px solid blue;
+}
+
+/* ---------------------------
+   Part C: Pseudo-Classes
+---------------------------- */
+
+/* Hover */
+a:hover {
+    color: red;
+}
+
+/* Focus */
+input:focus {
+    background-color: #d9f2ff;
+    outline: none;
+}
+
+/* Active */
+button:active {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;           /* rem */
+    cursor: pointer;
+}

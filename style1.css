@@ -1,0 +1,22 @@
+/* Universal Selector */
+* {
+    font-family: Verdana, sans-serif;
+}
+
+/* Element Selector */
+p {
+    color: black;
+    font-size: 16px;
+}
+
+/* Element Selector */
+h6{
+    color: purple;
+    text-align: center;
+}
+
+/* Body Styling */
+body {
+    background-color: #f2f2f2;
+    text-align: left;
+}
