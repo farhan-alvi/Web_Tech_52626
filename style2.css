@@ -16,6 +16,17 @@ body {
     background-color: #f4f4f4;
 }
 
+/* ---------------------------
+   Programming Languages Section Styling
+---------------------------- */
+.programming-section {
+    background-color: #e6f2ff;
+    padding: 2em;
+    margin: 2em auto;
+    width: 85%;
+    border-radius: 10px;
+}
+
 /* Descendant Selector */
 div p {
     font-size: 1.2em;          /* em */
@@ -24,59 +35,87 @@ div p {
 
 /* Using percentage for width */
 .list-container {
-    width: 80%;                /* % */
-    margin: 2em auto;          /* em */
+    width: 90%;                /* % */
+    margin: 1em auto;          /* em */
     padding: 1rem;             /* rem */
-    background-color: #e6f2ff;
+    background-color: #d9f0ff;
+    border-radius: 5px;
 }
 
-/* Using vh for height */
+/* ---------------------------
+   Links Section Styling
+---------------------------- */
+.links-section {
+    background-color: #e6ffe6;
+    padding: 1.5em;
+    margin: 2em auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* ---------------------------
+   Image Section Styling
+---------------------------- */
 .image-section {
-    height: 30vh;              /* vh */
+    background-color: #fff0f5;
+    padding: 2em;
+    margin: 2em auto;
+    width: 70%;
     text-align: center;
-    margin: 2rem auto;
+    border-radius: 10px;
 }
 
-/* Using cm (absolute unit) */
-img {
+/* Using cm (absolute unit) for image */
+.image-section img {
     width: 6cm;                /* cm */
 }
 
 /* ---------------------------
-   Part B: Selector Types
+   Contact Form Section Styling
 ---------------------------- */
+.contact-section {
+    background-color: #f0f8ff;
+    padding: 2em;
+    margin: 2em auto;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
 
-/* Attribute Selector */
+/* Attribute Selector for input */
 input[type="text"] {
-    width: 50%;                /* % */
-    padding: 10px;             /* px */
+    width: 70%;
+    padding: 10px;
     border: 2px solid blue;
+    font-size: 1rem;
+    margin-top: 0.5em;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;           /* rem */
+    cursor: pointer;
 }
 
 /* ---------------------------
-   Part C: Pseudo-Classes
+   Pseudo-Classes
 ---------------------------- */
 
-/* Hover */
+/* Hover for links */
 a:hover {
     color: red;
 }
 
-/* Focus */
+/* Focus for input */
 input:focus {
     background-color: #d9f2ff;
     outline: none;
 }
 
-/* Active */
+/* Active for button */
 button:active {
     background-color: darkgreen;
     color: white;
-}
-
-/* Button styling */
-button {
-    padding: 10px 20px;
-    font-size: 1rem;           /* rem */
-    cursor: pointer;
 }

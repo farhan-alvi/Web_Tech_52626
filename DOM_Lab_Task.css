@@ -1,0 +1,87 @@
+body{
+    font-family: Arial;
+    background:#fafaf3;
+    padding:20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* Form section */
+form{
+    margin-bottom:15px;
+}
+
+/* Input fields */
+input{
+    padding:8px;
+    margin:5px;
+}
+
+/* Buttons */
+button{
+    padding:8px 12px;
+    margin:5px;
+    cursor:pointer;
+}
+
+/* Student list */
+ul{
+    list-style:none;
+    padding:0;
+    max-width:500px;
+    margin:auto;
+}
+
+/* Each student row */
+.student-item{
+    background:white;
+    padding:10px;
+    margin-bottom:8px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:1px solid #ddd;
+}
+
+/* Edit button */
+.btn-edit{
+    background:#4caf50;
+    color:white;
+    border:none;
+}
+
+/* Delete button */
+.btn-delete{
+    background:#f44336;
+    color:white;
+    border:none;
+    margin-left:5px;
+}
+
+/* Present student */
+.present{
+    background:#b6ffb6;
+}
+
+/* Highlight first student */
+.highlight{
+    border:3px solid blue;
+}
+
+/* Info text */
+#total, #attendance{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+/* Footer style */
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
