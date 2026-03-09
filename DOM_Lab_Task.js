@@ -9,12 +9,12 @@ let searchBox = document.getElementById('search');
 
 let presentCount = 0;
 
-// Disable Add button when name input is empty
+
 nameInput.addEventListener('input', function(){
     addBtn.disabled = nameInput.value.trim() === "";
 });
 
-// Add student
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -32,7 +32,7 @@ form.addEventListener('submit', function(e){
     let span = document.createElement('span');
     span.textContent = roll + " - " + name;
 
-    // Present checkbox
+    
     let checkbox = document.createElement('input');
     checkbox.type = "checkbox";
     checkbox.addEventListener('change', function(){
@@ -46,7 +46,7 @@ form.addEventListener('submit', function(e){
         updateAttendance();
     });
 
-    // Edit button using prompt
+    
     let editBtn = document.createElement('button');
     editBtn.textContent = "Edit";
     editBtn.classList.add('btn-edit');
@@ -60,7 +60,7 @@ form.addEventListener('submit', function(e){
         }
     };
 
-    // Delete button with confirm
+    
     let deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
     deleteBtn.classList.add('btn-delete');
@@ -88,20 +88,20 @@ form.addEventListener('submit', function(e){
     updateAttendance();
 });
 
-// Update total students
+
 function updateCount(){
     let total = document.querySelectorAll('.student-item').length;
     totalText.textContent = "Total students: " + total;
 }
 
-// Update attendance
+
 function updateAttendance(){
     let total = document.querySelectorAll('.student-item').length;
     let absent = total - presentCount;
     attendanceText.textContent = "Present: " + presentCount + " , Absent: " + absent;
 }
 
-// Search/filter
+
 searchBox.addEventListener('input', function(){
     let text = searchBox.value.toLowerCase();
     let students = document.querySelectorAll('.student-item');
@@ -111,7 +111,7 @@ searchBox.addEventListener('input', function(){
     });
 });
 
-// Sort A-Z
+
 document.getElementById('sort-btn').onclick = function(){
     let students = Array.from(document.querySelectorAll('.student-item'));
     students.sort(function(a,b){
@@ -122,7 +122,7 @@ document.getElementById('sort-btn').onclick = function(){
     students.forEach(student => list.appendChild(student));
 };
 
-// Highlight first student
+
 document.getElementById('highlight-btn').onclick = function(){
     let students = document.querySelectorAll('.student-item');
     students.forEach(s => s.classList.remove('highlight'));
