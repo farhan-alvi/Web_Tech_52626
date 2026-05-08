@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX JSON Student Info</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        #output{
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid black;
+            width: 300px;
+        }
+
+        button{
+            padding: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Information System</h2>
+
+    <button onclick="loadStudent()">Show Student Info</button>
+
+    <div id="output">
+
+        Student details will appear here
+
+    </div>
+
+    <script>
+
+        function loadStudent(){
+
+            fetch("student.php")
+
+            .then(response => response.json())
+
+            .then(data => {
+
+                document.getElementById("output").innerHTML =
+
+                "<h3>Student Details</h3>" +
+
+                "<p><b>Name:</b> " + data.name + "</p>" +
+
+                "<p><b>ID:</b> " + data.id + "</p>" +
+
+                "<p><b>Department:</b> " + data.department + "</p>" +
+
+                "<p><b>CGPA:</b> " + data.cgpa + "</p>";
+
+            })
+
+            .catch(error => {
+
+                console.log("Error:", error);
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
